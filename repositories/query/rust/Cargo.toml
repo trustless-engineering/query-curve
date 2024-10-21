@@ -2,7 +2,7 @@
 name = "query-curve"
 description = "A Rust library for querying custom Bezier curves, compatible with curves created at https://querycurve.com."
 keywords = ["curve", "bezier", "query", "math"]
-categories = ["mathematics", "finance", "game development", "graphics", "science"]
+categories = ["mathematics", "finance", "game-development", "graphics", "science"]
 version = "0.1.0"
 authors = ["Tomas Savigliano <ralusek@gmail.com>"]
 edition = "2021"
