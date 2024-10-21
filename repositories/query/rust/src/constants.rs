@@ -1,0 +1,1 @@
+pub const ENCODING_SCALE_FACTOR: f64 = 10_000_000.0; // 10^7
