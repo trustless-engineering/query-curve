@@ -13,5 +13,6 @@ export function QUERYCURVE(value: number | string, curve: string): number | null
   if (typeof curve !== 'string') throw new Error('Curve must be a string');
   if (curve.length === 0) throw new Error('Curve cannot be empty');
   if (!curve.replace(/^/, '-').match(/^(?:--?[A-Za-z0-9]+){4,}$/)) throw new Error('Curve is not valid');
-  return queryEncodedCurve(curve, typeof value === 'string' ? parseFloat(value) : value);
+  const formattedValue = typeof value === 'string' ? parseFloat(value) : value;
+  return queryEncodedCurve(curve, formattedValue);
 }
