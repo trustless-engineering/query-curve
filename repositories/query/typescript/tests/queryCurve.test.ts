@@ -12,6 +12,15 @@ describe('@query-curve/queryCurve', () => {
     expect(queryCurve(curve, 1)).toBe(1);
   });
 
+  it('should correctly query for the default curve provided', async () => {
+    const defaultCurve = '2BLnMW-2BLnMW--KyjA--KyjA-0-KyjA-CaR6-XZAG-KyjA-TN1E-KyjA-KyjA-KyjA-CaR6-TN1E-8OI4-fxSK-KyjA';
+    expect(queryEncodedCurve(defaultCurve, 0)).toBe(0);
+    expect(queryEncodedCurve(defaultCurve, 100)?.toFixed(2)).toBe('0.00');
+    expect(queryEncodedCurve(defaultCurve, -100)?.toFixed(2)).toBe('0.00');
+    expect(queryEncodedCurve(defaultCurve, -40)?.toFixed(2)).toBe('37.27');
+    expect(queryEncodedCurve(defaultCurve, 40)?.toFixed(2)).toBe('-37.27');
+  });
+
   it('should correctly query for the value on the encoded curves', async () => {
     const encodedScaledChain = 'fxSK-fxSK-0-0-0-0-KyjA-0-KyjA-fxSK-fxSK-fxSK';
     expect(queryEncodedCurve(encodedScaledChain, 0)).toBe(0);

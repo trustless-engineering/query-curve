@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
-  <Id>28bcfd8c-eb82-4be6-8f17-54ed83a5da4d</Id>
+  <Id>5c5a58b3-44af-4952-b449-77068935882e</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>QueryCurve</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
